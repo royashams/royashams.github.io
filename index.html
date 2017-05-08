@@ -1,1 +1,49 @@
-howdy yall
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>YO CLICK THE PICTURE TO CHANGE THE PICTURE ITS SO COOL DANG DANG DANG.</p>
+
+<img id="demo" src="birbs.jpg" onclick="ChangeStuff()">
+
+<!-- <button type="button" onclick="document.getElementById('demo').style.display = 'none'">sshhhh hide!</button> -->
+<button type="button" onclick="HideIt()">sshhhh hide!</button>
+<p id="new"> here some new stuff </p>
+<button type="button" onclick= "meow.innerHTML = 'did u think this was a game'" > hey change things </button>
+
+	<script type="text/javascript">
+
+		function ChangeStuff(){
+			var demo = document.getElementById('demo')
+			if (demo.getAttribute('src') == 'garden.jpg') {
+				// i think the above if statement doesnt run 
+				demo.src = 'birbs.jpg'
+				// demo.style.display = 'block'
+			}
+			else {
+				demo.src = 'garden.jpg'
+				// demo.style.display = 'block'
+			}
+		}
+
+		var meow = document.getElementById('new');
+		// it a comment
+
+		function HideIt(){
+			var demo = document.getElementById('demo')
+			if (demo.getAttribute('display') == 'none'){
+				demo.style.display = 'block'
+			}
+			else{
+				demo.style.display = 'none'
+			}
+			// the hide bUTTON IS NOT WORRKRIIINGGGGUUUU
+		}
+
+
+	</script>
+<button onclick="document.write(5 + 6)">DO U WANT TO DEMONLISH ALL OF YOUR HARD WORK!??!</button>
+
+
+</body>
+</html>
