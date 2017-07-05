@@ -2,9 +2,11 @@
 <html>
 <body>
 
-<p>YO CLICK THE PICTURE TO CHANGE THE PICTURE ITS SO COOL DANG DANG DANG.</p>
+<p>YO CLICK THE PICTURE TO CHANGE THE PICTURE ITS SO COOL DoNG DoNG DoNG.</p>
 
-<img id="demo" src="birbs.jpg" onclick="ChangeStuff()">
+<img id="left" src="left.png" onclick="GoUp()">
+<img id="demo" src="1.png">
+<img id="right" src="right.png" onclick="GoDown()">
 
 <!-- <button type="button" onclick="document.getElementById('demo').style.display = 'none'">sshhhh hide!</button> -->
 <button type="button" onclick="HideIt()">sshhhh hide!</button>
@@ -13,16 +15,43 @@
 
 	<script type="text/javascript">
 
-		function ChangeStuff(){
-			var demo = document.getElementById('demo')
-			if (demo.getAttribute('src') == 'garden.jpg') {
-				// i think the above if statement doesnt run 
-				demo.src = 'birbs.jpg'
-				// demo.style.display = 'block'
+		function GoDown(){
+			// gonna try writing a switch statement
+			// YES IT WORKS BUT BECAUSE I USED A SEMICOLONNN
+			var demo = document.getElementById('demo');
+			switch (demo.getAttribute('src')) {
+			    case '1.png':
+			        demo.src = '2.png';
+			        break;
+			    case '2.png':
+				    demo.src = '3.png';
+				    break;
+			    case '3.png':
+				    demo.src = '1.png';
+				    break;	
+				default: 
+					demo.src = 'stalin.png';
+					break;
 			}
-			else {
-				demo.src = 'garden.jpg'
-				// demo.style.display = 'block'
+		}
+
+		function GoUp(){
+			// gonna try writing a switch statement
+			// YES IT WORKS BUT BECAUSE I USED A SEMICOLONNN
+			var demo = document.getElementById('demo');
+			switch (demo.getAttribute('src')) {
+			    case '1.png':
+			        demo.src = '3.png';
+			        break;
+			    case '2.png':
+				    demo.src = '1.png';
+				    break;
+			    case '3.png':
+				    demo.src = '2.png';
+				    break;	
+				default: 
+					demo.src = 'stalin.png';
+					break;
 			}
 		}
 
@@ -30,12 +59,12 @@
 		// it a comment
 
 		function HideIt(){
-			var demo = document.getElementById('demo')
+			var demo = document.getElementById('demo');
 			if (demo.getAttribute('display') == 'none'){
-				demo.style.display = 'block'
+				demo.style.display = 'block';
 			}
 			else{
-				demo.style.display = 'none'
+				demo.style.display = 'none';
 			}
 			// the hide bUTTON IS NOT WORRKRIIINGGGGUUUU
 		}
