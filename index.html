@@ -4,31 +4,44 @@
 
 <p>YO CLICK THE PICTURE TO CHANGE THE PICTURE ITS SO COOL DoNG DoNG DoNG.</p>
 
-<img id="left" src="left.png" onclick="GoUp()">
-<img id="demo" src="1.png">
-<img id="right" src="right.png" onclick="GoDown()">
+<img id="left" src="left.png" onclick="GoDown()">
+<img id="demo" src="original.png">
+<img id="right" src="right.png" onclick="GoUp()">
+
+<!-- ok trying to make a button that changes links depending on what is the src image in the middle -->
+
+<a id="about_and_contact" href="about_and_contact.html">
+	<img id="stalin" src="stalin.png" onclick="ChangeLink()">
+</a>
+<!-- <a href="portfolio.html">portfolios</a>
+<a href="professional.html">professional</a>
+<a href="misc.html">misc</a> -->
+
+<p> Hi! My name is Roya Shams and I am a Computer Science student currently studying at the University of Toronto. I am fascinated by art and memes. also coding sometimes. Im also hungry can someone bring me food or not!?!?!? help me</p>
 
 <!-- <button type="button" onclick="document.getElementById('demo').style.display = 'none'">sshhhh hide!</button> -->
-<button type="button" onclick="HideIt()">sshhhh hide!</button>
-<p id="new"> here some new stuff </p>
-<button type="button" onclick= "meow.innerHTML = 'did u think this was a game'" > hey change things </button>
 
 	<script type="text/javascript">
 
 		function GoDown(){
 			// gonna try writing a switch statement
-			// YES IT WORKS BUT BECAUSE I USED A SEMICOLONNN
 			var demo = document.getElementById('demo');
 			switch (demo.getAttribute('src')) {
-			    case '1.png':
-			        demo.src = '2.png';
+			    case 'original.png':
+			        demo.src = 'portfolios.png';
 			        break;
-			    case '2.png':
-				    demo.src = '3.png';
+			    case 'portfolios.png':
+				    demo.src = 'misc.png';
 				    break;
-			    case '3.png':
-				    demo.src = '1.png';
-				    break;	
+			    case 'misc.png':
+				    demo.src = 'experience.png';
+				    break;
+				case 'experience.png':
+					demo.src = 'about_and_contact.png';
+					break;
+				case 'about_and_contact.png':
+					demo.src = 'original.png';
+					break;
 				default: 
 					demo.src = 'stalin.png';
 					break;
@@ -40,39 +53,59 @@
 			// YES IT WORKS BUT BECAUSE I USED A SEMICOLONNN
 			var demo = document.getElementById('demo');
 			switch (demo.getAttribute('src')) {
-			    case '1.png':
-			        demo.src = '3.png';
+			    case 'original.png':
+			        demo.src = 'about_and_contact.png';
 			        break;
-			    case '2.png':
-				    demo.src = '1.png';
+			    case 'about_and_contact.png':
+				    demo.src = 'experience.png';
 				    break;
-			    case '3.png':
-				    demo.src = '2.png';
-				    break;	
+			    case 'experience.png':
+				    demo.src = 'misc.png';
+				    break;
+				case 'misc.png':
+					demo.src = 'portfolios.png';
+					break;
+				case 'portfolios.png':
+					demo.src = 'original.png';
+					break;
 				default: 
 					demo.src = 'stalin.png';
 					break;
 			}
 		}
 
-		var meow = document.getElementById('new');
-		// it a comment
-
-		function HideIt(){
+		function ChangeLink(){
 			var demo = document.getElementById('demo');
-			if (demo.getAttribute('display') == 'none'){
-				demo.style.display = 'block';
-			}
-			else{
-				demo.style.display = 'none';
-			}
-			// the hide bUTTON IS NOT WORRKRIIINGGGGUUUU
+			var link = document.getElementById('about_and_contact');
+			switch (demo.getAttribute('src')) {
+				case 'original.png':
+			        link.href = "index.html";
+			        break;
+			    case 'about_and_contact.png':
+			        link.href = "about_and_contact.html";
+			        break;
+			    case 'portfolios.png':
+				    link.href = "portfolio.html";
+				    break;
+			    case 'experience.png':
+				    link.href = "professional.html";
+				    break;	
+				case 'misc.png':
+					link.href = "misc.html";
+					break;
+				default: 
+					link.href = "about_and_contact.html";
+			        break;				
+			}	
 		}
 
-
 	</script>
-<button onclick="document.write(5 + 6)">DO U WANT TO DEMONLISH ALL OF YOUR HARD WORK!??!</button>
 
 
 </body>
+
+<footer> 
+
+<a href="about_and_contact.html">footer placeholder</a>
+</footer>
 </html>
