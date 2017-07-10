@@ -1,0 +1,43 @@
+/*img {
+    display: block;
+    margin: auto;
+}*/
+
+
+#big{
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#buttons{
+	display: block;
+    margin: auto;
+    width: 50%;
+}
+/*below works but can do better*/
+/*#top {
+	display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#buttons{
+	display: block;
+    margin: auto;
+    width:29%
+}*/
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    outline: none;
+}
+
+
+/*PROBLEM I CANT CENTER THE TEXT FOR THE EMAIL FORM FRICK ME M8*/
+#message {
+	text-align: justify;
+    text-align-last:start;
+	height: 200px;
+    width: 50%;
+}
