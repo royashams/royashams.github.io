@@ -4,6 +4,7 @@
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
 <body style="background-color: #d8c6c0">
+<script src="functions.js"></script>
 
 <p>Site under construction pls don't judge me, don't you have better things to do? Go for a nature walk ttyl</p>
 
@@ -11,9 +12,11 @@
 <p> aaaaaa </p>
 <img id="demo" src="original.png">
 <img id="left" src="left.png" onclick="GoDown()">
+
 <a id="about_and_contact" href="about_and_contact.html">
 	<img id="go" src="go_pls.png" onclick="ChangeLink()">
 </a>
+
 <img id="right" src="right.png" onclick="GoUp()">
 
 
@@ -24,89 +27,6 @@
 <p>If you would like to see my past work and experiences with leadership positions and as a Computer Science student, this is listed under “Experiences”
 If you would like to see my past personal projects in the visual arts/performing arts, this is listed under “Portfolios”
 If you want to learn more interesting things about me as a person and feel for the other aspects of my personality… you need to meet me in person! I don’t bite. Or you can head over to the ‘Miscellaneous’ part of my page.</p> 
-
-<!-- <button type="button" onclick="document.getElementById('demo').style.display = 'none'">sshhhh hide!</button> -->
-
-	<script type="text/javascript">
-
-		function GoDown(){
-			// gonna try writing a switch statement
-			var demo = document.getElementById('demo');
-			switch (demo.getAttribute('src')) {
-			    case 'original.png':
-			        demo.src = 'portfolios.png';
-			        break;
-			    case 'portfolios.png':
-				    demo.src = 'misc.png';
-				    break;
-			    case 'misc.png':
-				    demo.src = 'experience.png';
-				    break;
-				case 'experience.png':
-					demo.src = 'about_and_contact.png';
-					break;
-				case 'about_and_contact.png':
-					demo.src = 'original.png';
-					break;
-				default: 
-					demo.src = 'go_pls.png';
-					break;
-			}
-		}
-
-		function GoUp(){
-			// gonna try writing a switch statement
-			// YES IT WORKS BUT BECAUSE I USED A SEMICOLONNN
-			var demo = document.getElementById('demo');
-			switch (demo.getAttribute('src')) {
-			    case 'original.png':
-			        demo.src = 'about_and_contact.png';
-			        break;
-			    case 'about_and_contact.png':
-				    demo.src = 'experience.png';
-				    break;
-			    case 'experience.png':
-				    demo.src = 'misc.png';
-				    break;
-				case 'misc.png':
-					demo.src = 'portfolios.png';
-					break;
-				case 'portfolios.png':
-					demo.src = 'original.png';
-					break;
-				default: 
-					demo.src = 'go_pls.png';
-					break;
-			}
-		}
-
-		function ChangeLink(){
-			var demo = document.getElementById('demo');
-			var link = document.getElementById('about_and_contact');
-			switch (demo.getAttribute('src')) {
-				case 'original.png':
-			        link.href = "index.html";
-			        break;
-			    case 'about_and_contact.png':
-			        link.href = "about_and_contact.html";
-			        break;
-			    case 'portfolios.png':
-				    link.href = "portfolio.html";
-				    break;
-			    case 'experience.png':
-				    link.href = "professional.html";
-				    break;	
-				case 'misc.png':
-					link.href = "misc.html";
-					break;
-				default: 
-					link.href = "error.html";
-			        break;				
-			}	
-		}
-
-	</script>
-
 
 </body>
 
