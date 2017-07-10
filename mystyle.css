@@ -1,20 +1,54 @@
-/*img {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#banner, #demo {
     display: block;
     margin: auto;
-}*/
+    max-width: 50%;
+}
 
+p, form {
+	font-family: 'Open Sans';
+	font-size: 20px;
+}
 
-#big{
+/*#big{
 	display: block;
     margin: auto;
     width: 60%;
-}
+}*/
 
 #buttons{
 	display: block;
     margin: auto;
+    max-width: 30%;
+    padding: 10px
+}
+
+#left, #right, #go{
+	display: inline;
+    max-width: 30%;
+}
+
+/*refers to the image banners*/
+#about, #contact{
+	display: block;
+    margin: auto;
+	max-width: 50%;
+}
+
+span {
+	display: inline-block;
+	width:50%;
+}
+/*
+#d_about{
+	display: inline-block;
     width: 50%;
 }
+#d_contact{
+	display: inline-block;
+    width: 50%;
+}*/
 /*below works but can do better*/
 /*#top {
 	display: block;
@@ -28,6 +62,9 @@
     width:29%
 }*/
 
+input[type=text], input[type=email]  {
+	width: 100%
+}
 input[type=text]:focus {
     border: 3px solid #555;
     outline: none;
@@ -39,5 +76,5 @@ input[type=text]:focus {
 	text-align: justify;
     text-align-last:start;
 	height: 200px;
-    width: 50%;
+    width: 100%;
 }
