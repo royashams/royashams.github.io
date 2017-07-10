@@ -73,3 +73,31 @@
 			        break;				
 			}	
 		}
+
+		function HoverChangeTo(){
+			var linkedin = document.getElementById('linkedin');
+			var blurb = document.getElementById('blurb');
+			switch (linkedin.getAttribute('src')) {
+				case "social_icons/LinkedIn.png":
+			        linkedin.src = "social_icons/github.png";
+			        blurb = "does this work orrrrr";
+			        break;
+			    default:
+				    linkedin.src ='stalin.png';
+				    break;
+			}
+		}
+
+		// OK WTH IF I COMMENT OUT THE BOTTOM FUNCTION IT WORKS YYYYY
+
+		function HoverChangeBack(){
+			var linkedin = document.getElementById('linkedin');
+			switch (linkedin.getAttribute('src')) {
+				case "social_icons/github.png":
+			        linkedin.src = "social_icons/LinkedIn.png";
+			        break;
+			    default:
+				    linkedin.src ='stalin.png';
+				    break;
+			}
+		}
