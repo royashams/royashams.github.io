@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+body  {
+    background-image: url("bricks.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #d1d1d1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 90%
+}
+
 #banner, #demo {
     display: block;
     margin: auto;

@@ -51,7 +51,7 @@
 
 		function ChangeLink(){
 			var demo = document.getElementById('demo');
-			var link = document.getElementById('about_and_contact');
+			var link = document.getElementById('go_button');
 			switch (demo.getAttribute('src')) {
 				case 'original.png':
 			        link.href = "index.html";
@@ -84,4 +84,17 @@
 					blurb.innerHTML = id_to_str[key];
 				}
 			}
+		}
+
+		function fade(element) {
+		    var op = 1;  // initial opacity
+		    var timer = setInterval(function () {
+		        if (op <= 0.1){
+		            clearInterval(timer);
+		            element.style.display = 'none';
+		        }
+		        element.style.opacity = op;
+		        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		        op -= op * 0.1;
+		    }, 50);
 		}
