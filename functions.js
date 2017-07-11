@@ -78,7 +78,7 @@
 			var picture = document.getElementById(icon);
 			var blurb = document.getElementById("blurb");
 			//alternatively use dictionaries tbh
-			var id_to_str = {'linkedin':"LinkedIn", 'github':"GitHub"};
+			var id_to_str = {'linkedin':"LinkedIn aaa", 'github':"GitHub"};
 			for (key in id_to_str) {
 				if (picture.id == key) {
 					blurb.innerHTML = id_to_str[key];
