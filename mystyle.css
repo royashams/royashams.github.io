@@ -11,11 +11,13 @@ body  {
     max-width: 90%
 }
 
-#banner, #demo, #buttons{
+#banner, #demo{
     display: block;
     margin: auto;
     max-width: 90%;
 }
+
+
 
 p, form, #blurb {
 	font-family: 'Open Sans';
@@ -45,6 +47,7 @@ td, table {
 }
 
 #buttons, #experience_media, #portfolio_media{
+	display:block;
     margin: auto;
     max-width: 30%;
     padding: 20px
@@ -52,9 +55,8 @@ td, table {
 
 
 #left, #right, #go{
-	position: relative;
-	display: inline;
-    max-width: 32%;
+ 	display: inline;
+    max-width: 30%;
 }
 
 #linkedin, #github {
@@ -91,6 +93,14 @@ td, table {
   padding-right: 50px;
 }
 
+
+/*KEEP THIS OR ELSE YOUR BUTTONS WILL LOOK BAD*/
+span {
+	display: inline-block;
+	min-width: 30%;
+	width: 100%
+	max-width:100%;
+}
 
 input[type=text], input[type=email]  {
 	width: 100%
