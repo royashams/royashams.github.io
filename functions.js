@@ -74,30 +74,14 @@
 			}	
 		}
 
-		function HoverChangeTo(){
-			var linkedin = document.getElementById('linkedin');
-			var blurb = document.getElementById('blurb');
-			switch (linkedin.getAttribute('src')) {
-				case "social_icons/LinkedIn.png":
-			        linkedin.src = "social_icons/github.png";
-			        blurb = "does this work orrrrr";
-			        break;
-			    default:
-				    linkedin.src ='stalin.png';
-				    break;
-			}
-		}
-
-		// OK WTH IF I COMMENT OUT THE BOTTOM FUNCTION IT WORKS YYYYY
-
-		function HoverChangeBack(){
-			var linkedin = document.getElementById('linkedin');
-			switch (linkedin.getAttribute('src')) {
-				case "social_icons/github.png":
-			        linkedin.src = "social_icons/LinkedIn.png";
-			        break;
-			    default:
-				    linkedin.src ='stalin.png';
-				    break;
+		function HoverChangeTo(icon){
+			var picture = document.getElementById(icon);
+			var blurb = document.getElementById("blurb");
+			//alternatively use dictionaries tbh
+			var id_to_str = {'linkedin':"LinkedIn", 'github':"GitHub"};
+			for (key in id_to_str) {
+				if (picture.id == key) {
+					blurb.innerHTML = id_to_str[key];
+				}
 			}
 		}

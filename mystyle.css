@@ -3,7 +3,7 @@
 #banner, #demo {
     display: block;
     margin: auto;
-    max-width: 50%;
+    max-width: 90%;
 }
 
 p, form {
@@ -40,6 +40,8 @@ span {
 	display: inline-block;
 	width:50%;
 }
+
+
 /*
 #d_about{
 	display: inline-block;
