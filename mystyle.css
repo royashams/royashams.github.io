@@ -11,7 +11,7 @@ body  {
     max-width: 90%
 }
 
-#banner, #demo {
+#banner, #demo, #buttons{
     display: block;
     margin: auto;
     max-width: 90%;
@@ -20,29 +20,50 @@ body  {
 p, form, #blurb {
 	font-family: 'Open Sans';
 	font-size: 20px;
+	padding: 5px;
+	margin-left:50px;
+	margin-right:50px;
 }
 
-/*#big{
-	display: block;
-    margin: auto;
-    width: 60%;
-}*/
 
-#buttons{
-	display: block;
+.shrinkable {
+	max-width: 100%;
+	width: 50%;
+}
+
+td, table {
+	margin: auto;
+	font-family: 'Open Sans';
+	font-size: 20px;
+	color: white;
+	border: 15px solid white;
+    border-collapse: collapse;
+	text-align: center;
+	max-width: 50%;
+	min-width: 50%;
+	padding: 10px;
+}
+
+#buttons, #experience_media, #portfolio_media{
     margin: auto;
     max-width: 30%;
     padding: 20px
 }
 
+
 #left, #right, #go{
+	position: relative;
 	display: inline;
-    max-width: 30%;
+    max-width: 32%;
+}
+
+#linkedin, #github {
+	position: relative;
+	display: inline-flex;
+    max-width: 50%;
 }
 
 /*refers to the image banners*/
-
-
 #about, #contact{
 	display: block;
     margin: auto;
@@ -55,7 +76,6 @@ p, form, #blurb {
 }
 
 #d_about {
-/*  background-color: #9b9190;*/
   position: absolute;
   left: 0px;
   width: 40%;
@@ -64,7 +84,6 @@ p, form, #blurb {
 }
 
 #d_contact {
-/*  background-color: #e3bebd;*/
   position: absolute;
   right: 0px;
   width: 40%;
