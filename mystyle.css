@@ -44,7 +44,14 @@ td, table {
 	padding: 10px;
 }
 
-#buttons, #experience_media, #portfolio_media{
+#buttons{
+  display: block;
+  margin: auto;
+  max-width: 30%;
+  padding: 10px
+}
+
+#experience_media, #portfolio_media{
     margin: auto;
     max-width: 30%;
     padding: 20px
@@ -52,9 +59,8 @@ td, table {
 
 
 #left, #right, #go{
-	position: relative;
-	display: inline;
-    max-width: 32%;
+  display: inline;
+  max-width: 30%;
 }
 
 #linkedin, #github {
