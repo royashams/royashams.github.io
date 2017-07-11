@@ -21,7 +21,7 @@ p, form, #blurb {
 	display: block;
     margin: auto;
     max-width: 30%;
-    padding: 10px
+    padding: 20px
 }
 
 #left, #right, #go{
@@ -31,38 +31,46 @@ p, form, #blurb {
 }
 
 /*refers to the image banners*/
+
+
 #about, #contact{
 	display: block;
     margin: auto;
 	max-width: 50%;
 }
 
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+#d_about {
+/*  background-color: #9b9190;*/
+  position: absolute;
+  left: 0px;
+  width: 40%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#d_contact {
+/*  background-color: #e3bebd;*/
+  position: absolute;
+  right: 0px;
+  width: 40%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*#about_and_contact {
+	display: inline;
+}
+
 span {
 	display: inline-block;
 	width:50%;
 }
-
-
-/*
-#d_about{
-	display: inline-block;
-    width: 50%;
-}
-#d_contact{
-	display: inline-block;
-    width: 50%;
-}*/
-/*below works but can do better*/
-/*#top {
-	display: block;
-    margin: auto;
-    width: 60%;
-}
-#buttons{
-	display: block;
-    margin: auto;
-    width:29%
-}*/
+*/
 
 input[type=text], input[type=email]  {
 	width: 100%
