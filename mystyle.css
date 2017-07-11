@@ -6,7 +6,7 @@
     max-width: 90%;
 }
 
-p, form {
+p, form, #blurb {
 	font-family: 'Open Sans';
 	font-size: 20px;
 }
@@ -27,6 +27,7 @@ p, form {
 #left, #right, #go{
 	display: inline;
     max-width: 30%;
+    padding: 2px;
 }
 
 /*refers to the image banners*/
