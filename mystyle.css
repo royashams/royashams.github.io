@@ -62,15 +62,6 @@ p, form, #blurb {
   padding-right: 50px;
 }
 
-/*#about_and_contact {
-	display: inline;
-}
-
-span {
-	display: inline-block;
-	width:50%;
-}
-*/
 
 input[type=text], input[type=email]  {
 	width: 100%
