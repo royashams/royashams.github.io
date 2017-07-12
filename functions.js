@@ -98,3 +98,16 @@
 		        op -= op * 0.1;
 		    }, 50);
 		}
+
+		function Since(year) {
+			// Return the current year minus the year give in the variable
+			var today = new Date();
+			var current = today.getFullYear();
+			var doc = document.getElementById("date_me");
+			document.write((current-year)+" years");
+		}
+
+
+
+
+
