@@ -17,7 +17,7 @@ body  {
     max-width: 90%;
 }
 
-p, form {
+p, form, ul {
   margin: auto;
   margin-top: 20px; 
   margin-bottom: 20px;
@@ -30,7 +30,7 @@ p, form {
 
 .shrinkable {
 	max-width: 100%;
-	width: 100%;
+/*	width: 100%;*/
 }
 
 td, #experience_media, #portfolio_media {
