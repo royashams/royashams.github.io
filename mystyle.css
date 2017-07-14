@@ -98,17 +98,19 @@ td, #experience_media, #portfolio_media {
 }
 
 #d_about {
-  position: absolute;
-  left: 0px;
-  width: 40%;
+  margin:auto;
+/*  position: absolute;
+  left: 0px;*/
+  width: 60%;
   padding-left: 50px;
   padding-right: 50px;
 }
 
 #d_contact {
-  position: absolute;
-  right: 0px;
-  width: 40%;
+  margin: auto;
+/*  position: absolute;
+  right: 0px;*/
+  width: 60%;
   padding-left: 50px;
   padding-right: 50px;
 }
