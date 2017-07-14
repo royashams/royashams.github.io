@@ -124,19 +124,12 @@ span {
   max-width:100%;
 }
 
-input[type=text], input[type=email]  {
-	width: 100%
+input[type=text], input[type=email], #message_box  {
+	width: 100%;
+  font-family: 'Courier';
+  font-size: 16px;
 }
-input[type=text]:focus {
-    border: 3px solid #555;
+input[type=text]:focus, input[type=email]:focus, #message_box:focus {
+    border: 5px solid #b19492;
     outline: none;
-}
-
-
-/*PROBLEM I CANT CENTER THE TEXT FOR THE EMAIL FORM FRICK ME M8*/
-#message {
-	text-align: justify;
-    text-align-last:start;
-	height: 200px;
-    width: 100%;
 }
