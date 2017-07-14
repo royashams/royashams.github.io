@@ -46,18 +46,27 @@
 		<p>Send me an Email!</p>
 <!-- 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> -->
 		<form id="email_form" action="/action_page.php">
-		  First name:<br>
+
+		  First name:
+		  <br>
 		  <input type="text" name="firstname" value="" required="true"><br>
-		  Last name:<br>
+		  Last name:
+		  <br>
 		  <input type="text" name="lastname" value="" required="true"><br>
-		  Subject:<br>
+		  Subject:
+		  <br>
 		  <input type="text" name="subject" required="true" ><br>
 		  E-mail:
+		  <br>
 		  <input type="email" name="genericperson@genericemail.com" size="35" required="true" ><br>
-		  Message:<br>
-		  <!-- <input type="text" id="message" name="body" required="true"><br> -->
+		  Message:
+		  <br>
 		  <textarea class="ipbf-TextInput-Area" rows="15" id="message_box" type="text" required="true"></textarea>
-		  <input type="submit" value="Submit">
+
+		  <input type="image" id="submit_button" value="submit" src='banners/submit.png' alt="submit Button" onMouseOver="this.src='banners/submit.png'"> <br>
+<!-- 		  <input type="submit" value="Submit">
+		  	<img src="banners/submit.png" class="banners"></img>
+		  <br> -->
 
 		</form>
 	</div>

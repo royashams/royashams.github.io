@@ -17,19 +17,20 @@ body  {
     max-width: 90%;
 }
 
-p, form{
-  margin:auto;
+p, form {
+  margin: auto;
   margin-top: 20px; 
   margin-bottom: 20px;
 	font-family: 'Open Sans';
-	font-size: 20px;
+	font-size: 24px;
 	padding: 5px;
+  max-width: 70%;
 }
 
 
 .shrinkable {
 	max-width: 100%;
-	width: 70%;
+	width: 100%;
 }
 
 td, #experience_media, #portfolio_media {
@@ -43,6 +44,14 @@ td, #experience_media, #portfolio_media {
 	max-width: 70%;
 	min-width: 50%;
 	padding: 10px;
+}
+
+.descp {
+  font-size: 14px;
+}
+.text_link {
+  color: #b19492;
+
 }
 
 #skills_table {
@@ -77,14 +86,8 @@ td, #experience_media, #portfolio_media {
   max-width: 30%;
 }
 
-#linkedin, #github {
-	position: relative;
-	display: inline-flex;
-    max-width: 50%;
-}
-
 /*refers to the image banners*/
-#about, #contact, .banners{
+#about, #contact, .banners, #submit_button{
 	display: block;
   margin: auto;
 	max-width: 100%;
@@ -102,7 +105,7 @@ td, #experience_media, #portfolio_media {
 /*  position: absolute;
   left: 0px;*/
 /*  help*/
-  width: 60%;
+/*  width: 60%;*/
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -111,7 +114,7 @@ td, #experience_media, #portfolio_media {
   margin: auto;
 /*  position: absolute;
   right: 0px;*/
-  width: 60%;
+/*  width: 60%;*/
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -127,7 +130,7 @@ span {
 input[type=text], input[type=email], #message_box  {
 	width: 100%;
   font-family: 'Courier';
-  font-size: 16px;
+  font-size: 20px;
 }
 input[type=text]:focus, input[type=email]:focus, #message_box:focus {
     border: 5px solid #b19492;
