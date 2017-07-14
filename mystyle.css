@@ -80,10 +80,13 @@ td, #experience_media, #portfolio_media {
     padding: 20px
 }*/
 
+#button_table {
+  margin: auto;
+}
 
 #left, #right, #go{
   display: inline;
-  max-width: 30%;
+  max-width: 100%;
 }
 
 /*refers to the image banners*/
