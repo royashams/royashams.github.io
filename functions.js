@@ -107,6 +107,11 @@
 			document.write((current-year)+" years");
 		}
 
+		function ChangeDemo(image) {
+			var demo = document.getElementById('demo');
+			demo.src = image;
+		}
+
 
 
 

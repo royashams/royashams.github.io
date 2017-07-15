@@ -15,7 +15,17 @@
 <div id="big">
 	<div id="top">
 		<img id="banner" src="ROYASHAMS_banner.png">
-		<img id="demo" src="original.png">
+		<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
+
+		<map name="Map" id="Map">
+			    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
+
+		   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
+
+		   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
+
+				<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
+		</map>
 	</div>
 	<table id="button_table">
 		<tr>
