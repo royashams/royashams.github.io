@@ -135,7 +135,11 @@ input[type=text], input[type=email], #message_box  {
   font-family: 'Courier';
   font-size: 20px;
 }
-input[type=text]:focus, input[type=email]:focus, #message_box:focus img.map, map area{
+input[type=text]:focus, input[type=email]:focus, #message_box:focus {
     border: 5px solid #b19492;
+    outline: none;
+}
+
+img.map, map area{
     outline: none;
 }
