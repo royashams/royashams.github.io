@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700,900');
 
 body  {
     background-image: url("bricks.png");
@@ -21,7 +21,7 @@ p, form, ul {
   margin: auto;
   margin-top: 20px; 
   margin-bottom: 20px;
-	font-family: 'Open Sans';
+	font-family: 'Raleway';
 	font-size: 24px;
 	padding: 5px;
   max-width: 70%;
@@ -35,7 +35,7 @@ p, form, ul {
 
 td, #experience_media, #portfolio_media {
 	margin: auto;
-	font-family: 'Open Sans';
+	font-family: 'Raleway';
 	font-size: 20px;
 	color: white;
 	border: 15px double #6E7B68;
@@ -56,7 +56,7 @@ td, #experience_media, #portfolio_media {
 
 #skills_table {
   margin: auto;
-  font-family: 'Open Sans';
+  font-family: 'Raleway';
   font-size: 20px;
 /*  border-style: double;*/
   border: 15px double #6E7B68;
@@ -142,4 +142,12 @@ input[type=text]:focus, input[type=email]:focus, #message_box:focus {
 
 img.map, map area{
     outline: none;
+}
+
+ul li{
+    display:inline-block;
+    zoom:1;
+    padding-right: 25px;
+    color: #ffffff;
+    margin: auto;
 }
