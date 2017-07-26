@@ -63,7 +63,7 @@
 
 		<p>Send me an Email!</p>
 <!-- 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> -->
-		<form id="email_form" action="/action_page.php">
+		<form id="email_form" action="action_page.php" method="post">
 
 		  First name:
 		  <br>
@@ -76,7 +76,7 @@
 		  <input type="text" name="subject" required="true" ><br>
 		  E-mail:
 		  <br>
-		  <input type="email" name="genericperson@genericemail.com" size="35" required="true" ><br>
+		  <input type="email" name="email" size="35" required="true" ><br>
 		  Message:
 		  <br>
 		  <textarea class="ipbf-TextInput-Area" rows="15" id="message_box" type="text" required="true"></textarea>
