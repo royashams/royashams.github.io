@@ -27,21 +27,21 @@
 		</map>
 	</div>
 
-	<table id="button_table">
-		<tr>
-			<th>
-				<img id="left" src="left.png" onclick="GoDown()">
-			</th>
-			<th>
-				<a id="go_button" href="index.html">
-					<img id="go" src="go_pls.png" onclick="ChangeLink()">
-				</a>
-			</th>
-			<th>
-				<img id="right" src="right.png" onclick="GoUp()">
-			</th>
-		</tr>
-	</table>
+		<table id="button_table">
+			<tr>
+				<th>
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
+				</th>
+				<th>
+					<a id="go_button" href="index.html">
+						<img id="go" src="go_pls.png" onclick="ChangeLink()" onmouseover="this.src='banners/go_two.png', end_fade('go_button')" onmouseleave="this.src='go_pls.png', start_fade('go_button')">
+					</a>
+				</th>
+				<th>
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
+				</th>
+			</tr>
+		</table>
 </div>
 
 <img src="banners/PORTFOLIO.png" class="banners"></img>

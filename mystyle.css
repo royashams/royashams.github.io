@@ -8,13 +8,13 @@ body  {
     background-color: #d1d1d1;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-width: 90%
+    max-width: 100%
 }
 
 #banner, #demo, #buttons{
     display: block;
     margin: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 p, form, ul {
@@ -47,7 +47,7 @@ td, #experience_media, #portfolio_media {
 }
 
 .descp {
-  font-size: 14px;
+  font-size: 17px;
 }
 .text_link {
   color: #b19492;
@@ -90,12 +90,12 @@ td, #experience_media, #portfolio_media {
 }
 
 /*refers to the image banners*/
-#about, #contact, .banners, #submit_button{
+#about, #contact, .banners, #submit_button, #resume{
 	display: block;
   margin: auto;
 	max-width: 100%;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -151,3 +151,74 @@ ul li{
     color: #ffffff;
     margin: auto;
 }
+
+
+/*ANIMATION */
+
+
+@-webkit-keyframes blink {
+    0% {opacity: 1;}
+    25% {opacity: 0.2;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes blink {
+    0% {opacity: 1;}
+    25% {opacity: 0.2;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-o-keyframes blink {
+    0% {opacity: 1;}
+    25% {opacity: 0.2;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.fade_class {
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+.parent {
+  position: relative;
+}
+.image1 {
+  position: absolute;
+}
+.image2 {
+  position: absolute;
+}
+
+/*trying animation for demo...*/
+
+/*#demo {
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 10s;
+}*/
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes example {
+    0%   {content:url("original.png");}
+    20%  {content:url("about_and_contact.png");}
+    40%  {content:url("experience.png");}
+    60% {content:url("misc.png");}
+    80% {content:url("portfolios.png");}
+    100% {content:url("original.png");}
+}*/
+
+/* Standard syntax */
+/*@keyframes example {
+    0%   {content:url("original.png");}
+    20%  {content:url("about_and_contact.png");}
+    40%  {content:url("experience.png");}
+    60% {content:url("misc.png");}
+    80% {content:url("portfolios.png");}
+    100% {content:url("original.png");}
+}*/

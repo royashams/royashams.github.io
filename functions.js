@@ -21,6 +21,9 @@
 					demo.src = 'go_pls.png';
 					break;
 			}
+			end_fade("left");
+			end_fade("right");
+			start_fade("go_button");
 		}
 
 		function GoUp(){
@@ -47,6 +50,10 @@
 					demo.src = 'go_pls.png';
 					break;
 			}
+			end_fade("left");
+			end_fade("right");
+			start_fade("go_button");
+
 		}
 
 		function ChangeLink(){
@@ -112,7 +119,36 @@
 			demo.src = image;
 		}
 
+		function is_touch_device() {
+		 return (('ontouchstart' in window)
+		      || (navigator.MaxTouchPoints > 0)
+		      || (navigator.msMaxTouchPoints > 0));
+		}
 
+		if (!is_touch_device()) {
+		 document.getElementById('go_button').style.display='none';
+		 // so far it should hide the demo pic if its on a touchscreen.
+		}
+
+
+		function start_fade(image){
+			document.getElementById(image).classList.add('fade_class');
+		}
+
+		function end_fade(image){
+			document.getElementById(image).classList.remove('fade_class');
+		}
+
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() {
+		  $('#slideshow > div:first')
+		    .fadeOut(1000)
+		    .next()
+		    .fadeIn(1000)
+		    .end()
+		    .appendTo('#slideshow');
+		}, 3000);
 
 
 

@@ -14,32 +14,35 @@
 	<div id="big">
 		<div id="top">
 			<img id="banner" src="ROYASHAMS_banner.png">
-			<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
+			<div id="main_nav">
+				<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
 
-			<map name="Map" id="Map">
-				    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
+				<map name="Map" id="Map">
 
-			   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
+					    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-			   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
+				   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-					<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
-			</map>
-			
+				   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
+
+						<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
+				</map>
+			</div>
+
 		</div>
 
 		<table id="button_table">
 			<tr>
 				<th>
-					<img id="left" src="left.png" onclick="GoDown()" onMouseOver="this.src='left.png'">
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
 				</th>
 				<th>
 					<a id="go_button" href="index.html">
-						<img id="go" src="go_pls.png" onclick="ChangeLink()">
+						<img id="go" src="go_pls.png" onclick="ChangeLink()" onmouseover="this.src='banners/go_two.png', end_fade('go_button')" onmouseleave="this.src='go_pls.png', start_fade('go_button')">
 					</a>
 				</th>
 				<th>
-					<img id="right" src="right.png" onclick="GoUp()" onMouseOver="this.src='right.png'">
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
 				</th>
 			</tr>
 		</table>
@@ -50,12 +53,11 @@
 	<p> Click the left and right arrows to choose something that you would like to see, then press “Go”. </p>
 
 	<ul>
-		<li> <b> ABOUT AND CONTACT: A short bio about me, or you can send me an email!</b></li>
-		<li> EXPERIENCES: Past work and experiences with leadership positions and as a Computer Science student.</li>
-		<li> PORTFOLIOS: Past personal projects in the visual arts/performing arts. Mostly done as a hobby.</li>
-		<li> MISCELLANEOUS: ?!??!???!?? surprise! </li>
+		<li> &bull; ABOUT AND CONTACT: A short bio about me, or you can send me an email!</li>
+		<li> &bull; EXPERIENCES: Past work and experiences with leadership positions and as a Computer Science student.</li>
+		<li> &bull; PORTFOLIOS: Past personal projects in the visual arts/performing arts. Mostly done as a hobby.</li>
+		<li> &bull; MISCELLANEOUS: ?!??!???!?? surprise! </li>
 	</ul>
-
 <!-- 	<p>If you would like to see my past work and experiences with leadership positions and as a Computer Science student, this is listed under “Experiences”.
 	If you would like to see my past personal projects in the visual arts/performing arts, this is listed under “Portfolios”
 	If you want to learn more interesting things about me as a person and feel for the other aspects of my personality… you need to meet me in person! I don’t bite. Or you can head over to the ‘Miscellaneous’ part of my page.</p>  -->

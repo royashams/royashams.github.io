@@ -30,24 +30,27 @@
 		<table id="button_table">
 			<tr>
 				<th>
-					<img id="left" src="left.png" onclick="GoDown()">
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
 				</th>
 				<th>
 					<a id="go_button" href="index.html">
-						<img id="go" src="go_pls.png" onclick="ChangeLink()">
+						<img id="go" src="go_pls.png" onclick="ChangeLink()" onmouseover="this.src='banners/go_two.png', end_fade('go_button')" onmouseleave="this.src='go_pls.png', start_fade('go_button')">
 					</a>
 				</th>
 				<th>
-					<img id="right" src="right.png" onclick="GoUp()">
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
 				</th>
 			</tr>
 		</table>
 	</div>
 
 	<img src="banners/EXPERIENCE.png" class="banners"></img>
+	<a href="resume.pdf" target="_blank">
+		<img src="banners/resume.png" id="resume">
+	</a>
 	<img src="banners/links.png" class="banners"></img>
 
-	<p id="blurb" display="none" style="width:50%"> Here are some external links to websites that list my past leadership experiences and programming projects. </p>
+	<p id="blurb" display="none" style="width:100%"> Here are some external links to websites that list my past leadership experiences and programming projects. </p>
 
 	<!-- <table style="width:100%"> -->
 	<table id="experience_media" style="width:100%" >
@@ -71,9 +74,29 @@
 		</tr>
 	</table>
 
+	<img src="banners/languages.png" class="banners"></img>
+	<p> Here are some of the languages I know.</p>
+
+	<ul>
+		<li> &bull; Python</li>
+		<li> &bull; C</li>
+		<li> &bull; Java</li>
+		<li> &bull; Javascript</li>
+		<li>&bull; Verilog</li>
+		<li>&bull; HTML</li>
+		<li>&bull; CSS</li>
+	</ul>
+
+	<p> Oh, and here are some human languages I know.</p>
+	<ul>
+		<li>&bull; English</li>
+		<li>&bull; Farsi</li>
+		<li>&bull; French</li>
+	</ul>
+
 	<img src="banners/skills.png" class="banners"></img>
 
-	<p style="width:50%"> Although I am new to many skills, like web development (this is my first website i’ve fully developed on my own!) I’ve learned and acquired different skills over the years. Here is a table listing some of the more “prominent” skills that I have and how long i’ve performed them.
+	<p style="width:100%"> Although I am new to many skills, like web development (this is my first website i’ve fully developed on my own!) I’ve learned and acquired different skills over the years. Here is a table listing some of the more “prominent” skills that I have and how long i’ve performed them.
 	</p>
 
 	<table id="skills_table" class="tg" style="width:70%">
@@ -97,25 +120,6 @@
 
 	<p>	My most recent leadership experience is being the Head of Advertising for University of Toronto’s Computer Graphics Club (UTCG). My most valuable experience was being the Yearbook Editor in my high school, after years of staying involved with the Yearbook Committee in the Graphics Department. Not only did I learn about graphic design and print layout, but I also learned how to delegate, compromise, and to take initiative in long term projects. I would say that I enjoy and excel in project-oriented group work, I find satisfaction in building a large project with a team and sharing our completed work with others. </p>
 
-	<img src="banners/languages.png" class="banners"></img>
-	<p> Here are some of the languages I know.</p>
-
-	<ul>
-		<li> &bull; Python</li>
-		<li> &bull; C</li>
-		<li> &bull; Java</li>
-		<li> &bull; Javascript</li>
-		<li>&bull; Verilog</li>
-		<li>&bull; HTML</li>
-		<li>&bull; CSS</li>
-	</ul>
-
-	<p> Oh, and here are some human languages I know.</p>
-	<ul>
-		<li>&bull; English</li>
-		<li>&bull; Farsi</li>
-		<li>&bull; French</li>
-	</ul>
 
 </body>
 <!-- <footer style="background-color: #FFFFFF;"> 
