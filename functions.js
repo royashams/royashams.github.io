@@ -119,16 +119,6 @@
 			demo.src = image;
 		}
 
-		function is_touch_device() {
-		 return (('ontouchstart' in window)
-		      || (navigator.MaxTouchPoints > 0)
-		      || (navigator.msMaxTouchPoints > 0));
-		}
-
-		if (!is_touch_device()) {
-		 document.getElementById('go_button').style.display='none';
-		 // so far it should hide the demo pic if its on a touchscreen.
-		}
 
 
 		function start_fade(image){
@@ -139,16 +129,50 @@
 			document.getElementById(image).classList.remove('fade_class');
 		}
 
-		$("#slideshow > div:gt(0)").hide();
+		// $("#slideshow > div:gt(0)").hide();
 
-		setInterval(function() {
-		  $('#slideshow > div:first')
-		    .fadeOut(1000)
-		    .next()
-		    .fadeIn(1000)
-		    .end()
-		    .appendTo('#slideshow');
-		}, 3000);
+		// setInterval(function() {
+		//   $('#slideshow > div:first')
+		//     .fadeOut(1000)
+		//     .next()
+		//     .fadeIn(1000)
+		//     .end()
+		//     .appendTo('#slideshow');
+		// }, 3000);
+
+		// OK so ill put slideshow stuff down here its 5:58 a the airport sup
+
+		var slideIndex = 1;
+		// showSlides(slideIndex);
+		var slides = document.getElementsByClassName("mySlides");
+		slides[2].style.display = "block"; 
+
+
+		// PROBLEM: first thing it does is not display the first image but if you press the arrows it goes to the 2nd image asap
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
 
 
 
