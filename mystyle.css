@@ -25,7 +25,7 @@ p, form, ul, li {
 	font-family: 'Raleway';
 	font-size: 24px;
 	padding: 5px;
-  max-width: 85%;
+  max-width: 75%;
 }
 
 
@@ -75,11 +75,6 @@ td, #experience_media, #portfolio_media {
   padding: 10px;
 }
 
-/*#experience_media, #portfolio_media{
-    margin: auto;
-    max-width: 30%;
-    padding: 20px
-}*/
 
 #button_table {
   margin: auto;
@@ -154,6 +149,12 @@ ul li{
 
 li { font-size: 24px;}
 
+.sculpt_table {
+  margin:auto;
+  padding: 50px;
+  max-width: 100%;
+}
+
 /*ANIMATION */
 
 
@@ -185,15 +186,6 @@ li { font-size: 24px;}
     -o-animation-iteration-count: infinite;
 }
 
-.parent {
-  position: relative;
-}
-.image1 {
-  position: absolute;
-}
-.image2 {
-  position: absolute;
-}
 
 
 /*Hi so uh i just took slideshow stuff from w3c*/
