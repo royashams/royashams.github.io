@@ -25,7 +25,7 @@ p, form, ul, li {
 	font-family: 'Raleway';
 	font-size: 24px;
 	padding: 5px;
-  max-width: 70%;
+  max-width: 85%;
 }
 
 
@@ -149,8 +149,10 @@ ul li{
     display:inline-block;
     padding-right: 25px;
     color: #7b584d;
-    margin: auto;
+    max-width: 100%;
 }
+
+li { font-size: 24px;}
 
 /*ANIMATION */
 
