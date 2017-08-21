@@ -12,13 +12,16 @@ body  {
     padding-bottom:300px;
 }
 
+/*refers to everything at the top of the page up to and including the button table.*/
 #banner, #demo, #buttons{
     display: block;
     margin: auto;
     max-width: 100%;
 }
 
-p, form, ul, li {
+
+/*Text placement*/
+p, ul, li {
   margin: auto;
   margin-top: 20px; 
   margin-bottom: 20px;
@@ -28,13 +31,14 @@ p, form, ul, li {
   max-width: 75%;
 }
 
-
+/*refers mostly to icons, they need to shrink to be responsive*/
 .shrinkable {
 	max-width: 100%;
-/*	width: 100%;*/
 }
 
-td, #experience_media, #portfolio_media {
+
+/*style for the tables that have icons and links, skills, etc*/
+td, #experience_media, #portfolio_media, #skills_table {
 	margin: auto;
 	font-family: 'Raleway';
 	font-size: 20px;
@@ -47,35 +51,19 @@ td, #experience_media, #portfolio_media {
 	padding: 10px;
 }
 
+/*Used for the descriptions of links in some tables.*/
 .descp {
-  font-size: 17px;
+  font-size: 20px;
 }
+
+/*Embedded links to external pages*/
 .text_link {
   color: #b19492;
 
 }
 
-#skills_table {
-  margin: auto;
-  font-family: 'Raleway';
-  font-size: 20px;
-/*  border-style: double;*/
-  border: 15px double #6E7B68;
-  border-collapse: collapse;
-  color:white;
-  max-width: 70%;
-  min-width: 50%;
-  padding: 10px;
-}
 
-#buttons{
-  display: block;
-  margin: auto;
-  max-width: 30%;
-  padding: 10px;
-}
-
-
+/*Refers to navigation buttons*/
 #button_table {
   margin: auto;
 }
@@ -85,7 +73,7 @@ td, #experience_media, #portfolio_media {
   max-width: 100%;
 }
 
-/*refers to the image banners*/
+/*Refers to the image banners*/
 #about, #contact, .banners, #submit_button, #resume{
 	display: block;
   margin: auto;
@@ -99,26 +87,6 @@ td, #experience_media, #portfolio_media {
   width: 100%;
 }
 
-#d_about {
-  margin:auto;
-/*  position: absolute;
-  left: 0px;*/
-/*  help*/
-/*  width: 60%;*/
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-#d_contact {
-  margin: auto;
-/*  position: absolute;
-  right: 0px;*/
-/*  width: 60%;*/
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/*KEEP THIS OR ELSE YOUR BUTTONS WILL LOOK BAD*/
 span {
   display: inline-block;
   min-width: 30%;
@@ -126,16 +94,8 @@ span {
   max-width:100%;
 }
 
-input[type=text], input[type=email], #message_box  {
-	width: 100%;
-  font-family: 'Courier';
-  font-size: 20px;
-}
-input[type=text]:focus, input[type=email]:focus, #message_box:focus {
-    border: 5px solid #b19492;
-    outline: none;
-}
 
+/*hiding outline onclick for navigation diamond at top */
 img.map, map area{
     outline: none;
 }
@@ -149,15 +109,14 @@ ul li{
 
 li { font-size: 24px;}
 
+/*how to display sculptures in portfolio section*/
 .sculpt_table {
   margin:auto;
   padding: 50px;
   max-width: 100%;
 }
 
-/*ANIMATION */
-
-
+/*ANIMATION, mostly taken from http://jsfiddle.net/r6dje/ */
 @-webkit-keyframes blink {
     0% {opacity: 1;}
     25% {opacity: 0.2;}
@@ -177,6 +136,7 @@ li { font-size: 24px;}
     100% {opacity: 1;}
 }
 
+/*Want to attract attention to some buttons based on their interaction, so they blink*/
 .fade_class {
     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
@@ -186,100 +146,7 @@ li { font-size: 24px;}
     -o-animation-iteration-count: infinite;
 }
 
-
-
-/*Hi so uh i just took slideshow stuff from w3c*/
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
+/*Making sure buttons indicate they are clickable to the user*/
+#left:hover, #right:hover{
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  max-width: 100;
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  /*border-radius: 50%;*/
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }

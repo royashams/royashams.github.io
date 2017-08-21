@@ -3,32 +3,41 @@
 <title>Roya Shams|Portfolios</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 <head>
+
+<!-- import css -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body style="background-color: #d8c6c0">
+<body style="background-color: #d1d1d1">
 
+<!-- importing javascript functions-->	
 <script src="functions.js"></script>
 
-<div id="big">
-	<div id="top">
-		<img id="banner" src="ROYASHAMS_banner.png">
-		<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
+<!-- Navigation diamond with hover capabilities -->
+	<div id="big">
+		<div id="top">
+			<img id="banner" src="ROYASHAMS_banner.png">
+			<div id="main_nav">
+				<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
 
-		<map name="Map" id="Map">
-			    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
+				<!-- mapping change to image and links on hover, change of each diamond area  -->
+				<map name="Map" id="Map">
+					    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-		   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
+				   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-		   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
+				   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-				<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
-		</map>
-	</div>
+						<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
+				</map>
+			</div>
 
+		</div>
+
+		<!-- Left, go, and right buttons change with hover, fade capabilities change based on interaction with buttons -->
 		<table id="button_table">
 			<tr>
 				<th>
-						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="click_counter(), GoDown(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/left_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_left.png', start_fade('left'), start_fade('right')">
 				</th>
 				<th>
 					<a id="go_button" href="index.html">
@@ -36,17 +45,20 @@
 					</a>
 				</th>
 				<th>
-						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="click_counter(), GoUp(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/right_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_right.png', start_fade('left'), start_fade('right')">
 				</th>
 			</tr>
 		</table>
-</div>
+	</div>
 
 <img src="banners/PORTFOLIO.png" class="banners"></img>
-<img src="banners/links.png" class="banners"></img>
 
+<!-- EXTERNAL LINKS -->
+
+<img src="banners/links.png" class="banners"></img>
 <p id="blurb"> Here you will find a collection of different portfolios showcasing my skills in different subjects.</p>
 
+<!-- table displaying clickable icon link, label, and short description. -->
 <table id="portfolio_media">
 	<tr>
 		<td>
@@ -85,16 +97,10 @@
 		<td class="descp"> Side-by-side 3D photography. 
 		<a href="http://bit.ly/1p3zKzn" class="text_link"> Viewing Tutorial </a> </td>
 	</tr>
-<!-- 	<tr>
-		<td>
-			<a id='lstereo' href="https://www.flickr.com/photos/141368940@N07/albums/72157665241866934">
-				<img id="sculpture" class="shrinkable" src="social_icons/sculpture.png">
-			</a>
-		</td>
-		<th> Sculpture </th>
-		<td class="descp"> *** COMING SOON! ***  </td>
-	</tr> -->
+
 </table>
+
+<!-- SCULPTURES -->
 
 <img src="banners/sculptures.png" class="banners"></img>
 <p> Here are examples of some of my more detailed sculptures I have made over the years. I tend to use polymer clay (a mixture of Sculpey III and Sculpey Premo), with wire running through the body, and yarn or embroidery floss for the hair. I hope to have more experience with sculpting different objects and subjects. Maybe I can try digital modelling! </p>
@@ -134,18 +140,5 @@
 		<img src="sculptures/mp2.png" width="100%"></img>
 	</th>
 </table>
-
-
-
-
-
 </body>
-<!-- <footer style="background-color: #FFFFFF;"> 
-	<a href="index.html">Home</a>
-	<a href="about_and_contact.html">About and Contact</a>
-	<a href="professional.html">Experience</a>
-	<a href="portfolio.html">Portfolios</a>
-	<a href="misc.html">Miscellaneous</a>
-
-</footer> -->
 </html>

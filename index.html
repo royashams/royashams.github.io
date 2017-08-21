@@ -3,20 +3,24 @@
 <title>Roya Shams</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 <head>
+
+<!-- import css -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body>
+<body style="background-color: #d1d1d1">
 
-	<script src="functions.js"></script>
+<!-- importing javascript functions-->	
+<script src="functions.js"></script>
 
+<!-- Navigation diamond with hover capabilities -->
 	<div id="big">
 		<div id="top">
 			<img id="banner" src="ROYASHAMS_banner.png">
 			<div id="main_nav">
 				<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
 
+				<!-- mapping change to image and links on hover, change of each diamond area  -->
 				<map name="Map" id="Map">
-
 					    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
 
 				   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
@@ -29,10 +33,11 @@
 
 		</div>
 
+		<!-- Left, go, and right buttons change with hover, fade capabilities change based on interaction with buttons -->
 		<table id="button_table">
 			<tr>
 				<th>
-						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="click_counter(), GoDown(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/left_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_left.png', start_fade('left'), start_fade('right')">
 				</th>
 				<th>
 					<a id="go_button" href="index.html">
@@ -40,7 +45,7 @@
 					</a>
 				</th>
 				<th>
-						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="click_counter(), GoUp(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/right_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_right.png', start_fade('left'), start_fade('right')">
 				</th>
 			</tr>
 		</table>
@@ -56,18 +61,7 @@
 			<li> &bull; PORTFOLIOS: Past personal projects in the visual arts/performing arts. Mostly done as a hobby.</li>
 			<li> &bull; MISCELLANEOUS: ?!??!???!?? surprise! </li>
 		</ul>
-<!-- 	<p>If you would like to see my past work and experiences with leadership positions and as a Computer Science student, this is listed under “Experiences”.
-	If you would like to see my past personal projects in the visual arts/performing arts, this is listed under “Portfolios”
-	If you want to learn more interesting things about me as a person and feel for the other aspects of my personality… you need to meet me in person! I don’t bite. Or you can head over to the ‘Miscellaneous’ part of my page.</p>  -->
+
 
 </body>
-
-<!-- <footer style="background-color: #FFFFFF;"> 
-	<a href="index.html">Home</a>
-	<a href="about_and_contact.html">About and Contact</a>
-	<a href="professional.html">Experience</a>
-	<a href="portfolio.html">Portfolios</a>
-	<a href="misc.html">Miscellaneous</a>
-
-</footer> -->
 </html>

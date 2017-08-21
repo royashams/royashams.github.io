@@ -3,33 +3,41 @@
 <title>Roya Shams|Experience</title>
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 <head>
+
+<!-- import css -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body style="background-color: #d8c6c0">
+<body style="background-color: #d1d1d1">
 
-	<script src="functions.js"></script>
+<!-- importing javascript functions-->	
+<script src="functions.js"></script>
 
-
+<!-- Navigation diamond with hover capabilities -->
 	<div id="big">
 		<div id="top">
 			<img id="banner" src="ROYASHAMS_banner.png">
-			<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
+			<div id="main_nav">
+				<img id="demo" src="original.png" alt="" usemap="#Map" onclick="ChangeLink()">
 
-			<map name="Map" id="Map">
-				    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
+				<!-- mapping change to image and links on hover, change of each diamond area  -->
+				<map name="Map" id="Map">
+					    <area id="top_diamond" href="about_and_contact.html" shape="poly" coords="225, 0, 338, 150, 225, 300, 113, 150" onmouseenter="ChangeDemo('about_and_contact.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-			   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
+				   	    <area id="right_diamond" href="professional.html" shape="poly" coords="338,150,450,300,338,450,225,300" onmouseenter="ChangeDemo('experience.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-			   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
+				   	    <area id="bottom_diamond" href="misc.html" shape="poly" coords="225,300,338,450,225,600,113,450" onmouseenter="ChangeDemo('misc.png')" onmouseleave="ChangeDemo('original.png')"/>
 
-					<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
-			</map>
+						<area id="left_diamond" href="portfolio.html" shape="poly" coords="113,150,225,300,113,450,0,300" onmouseenter="ChangeDemo('portfolios.png')" onmouseleave="ChangeDemo('original.png')"/>
+				</map>
+			</div>
+
 		</div>
 
+		<!-- Left, go, and right buttons change with hover, fade capabilities change based on interaction with buttons -->
 		<table id="button_table">
 			<tr>
 				<th>
-						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="GoDown()" onmouseover="this.src='banners/left_two.png', end_fade('left')" onmouseleave="this.src='banners/brighter_left.png'">
+						<img id="left" class="fade_class" src="banners/brighter_left.png" onclick="click_counter(), GoDown(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/left_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_left.png', start_fade('left'), start_fade('right')">
 				</th>
 				<th>
 					<a id="go_button" href="index.html">
@@ -37,21 +45,26 @@
 					</a>
 				</th>
 				<th>
-						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="GoUp()" onmouseover="this.src='banners/right_two.png', end_fade('right')" onmouseleave="this.src='banners/brighter_right.png'">
+						<img id="right" class="fade_class" src="banners/brighter_right.png" onclick="click_counter(), GoUp(), end_fade('left'), end_fade('right')" onmouseover="this.src='banners/right_two.png', end_fade('left'), end_fade('right')" onmouseleave="this.src='banners/brighter_right.png', start_fade('left'), start_fade('right')">
 				</th>
 			</tr>
 		</table>
 	</div>
 
+<!-- EXPERIENCE -->
 	<img src="banners/EXPERIENCE.png" class="banners"></img>
+
 	<a href="resume.pdf" target="_blank">
 		<img src="banners/Resume.png" id="resume">
 	</a>
+
+<!-- LINKS -->
 	<img src="banners/links.png" class="banners"></img>
 
 	<p id="blurb" display="none" style="width:100%"> Here are some external links to websites that list my past leadership experiences and programming projects. </p>
 
-	<!-- <table style="width:100%"> -->
+<!-- Table with an icon, label, and description of link -->
+
 	<table id="experience_media" style="width:100%" >
 		<tr>
 			<td>
@@ -73,10 +86,11 @@
 		</tr>
 	</table>
 
+<!-- LANGUAGES -->
 	<img src="banners/languages.png" class="banners"></img>
-	<p> Here are some of the languages I know.</p>
+	<p align="center"> Here are some of the languages I know.</p>
 
-	<ul>
+	<ul align="center">
 		<li> &bull; Python</li>
 		<li> &bull; C</li>
 		<li> &bull; Java</li>
@@ -86,13 +100,14 @@
 		<li>&bull; CSS</li>
 	</ul>
 
-	<p> Oh, and here are some human languages I know.</p>
-	<ul>
+	<p align="center"> Oh, and here are some human languages I know.</p>
+	<ul align="center">
 		<li>&bull; English</li>
 		<li>&bull; Farsi</li>
 		<li>&bull; French</li>
 	</ul>
 
+<!-- SKILLS -->
 	<img src="banners/skills.png" class="banners"></img>
 
 	<p style="width:100%"> Although I am new to many skills, like web development (this is my first website i’ve fully developed on my own!) I’ve learned and acquired different skills over the years. Here is a table listing some of the more “prominent” skills that I have and how long i’ve performed them.
@@ -115,18 +130,11 @@
 	  </tr>
 	</table>
 
+<!-- LEADERSHIP -->
 	<img src="banners/leadership.png" class="banners"></img>
 
 	<p>	My most recent leadership experience is being the Head of Advertising for University of Toronto’s Computer Graphics Club (UTCG). My most valuable experience was being the Yearbook Editor in my high school, after years of staying involved with the Yearbook Committee in the Graphics Department. Not only did I learn about graphic design and print layout, but I also learned how to delegate, compromise, and to take initiative in long term projects. I would say that I enjoy and excel in project-oriented group work, I find satisfaction in building a large project with a team and sharing our completed work with others. </p>
 
 
 </body>
-<!-- <footer style="background-color: #FFFFFF;"> 
-	<a href="index.html">Home</a>
-	<a href="about_and_contact.html">About and Contact</a>
-	<a href="professional.html">Experience</a>
-	<a href="portfolio.html">Portfolios</a>
-	<a href="misc.html">Miscellaneous</a>
-
-</footer> -->
 </html>
