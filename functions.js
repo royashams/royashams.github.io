@@ -31,7 +31,7 @@
 			start_fade("go_button");
 		}
 /**
- * This function is for the left button, it changes the image in the navigation diamond 
+ * This function is for the right button, it changes the image in the navigation diamond 
  *'demo' based on its previous image.
  * similar to a clockwise rotation.
  */
@@ -123,6 +123,13 @@
 			document.getElementById(image).classList.remove('fade_class');
 			}
 
+/**
+ * Changes the 'demo' navigation diamond image to the given image.
+ */
+		function ChangeDemo(image) {
+		      var demo = document.getElementById('demo');
+		      demo.src = image;
+		    }
 
 
 
