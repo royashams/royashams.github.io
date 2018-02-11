@@ -23,7 +23,7 @@ body  {
 /*Text placement*/
 p, ul, li {
   margin: auto;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 20px;
 	font-family: 'Raleway';
 	font-size: 24px;
@@ -149,4 +149,9 @@ li { font-size: 24px;}
 /*Making sure buttons indicate they are clickable to the user*/
 #left:hover, #right:hover{
   cursor: pointer;
+}
+
+.linker {
+  color: #6E7B68;
+  text-decoration: none;
 }
