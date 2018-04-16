@@ -114,6 +114,7 @@ li { font-size: 24px;}
   margin:auto;
   padding: 50px;
   max-width: 100%;
+  flex-wrap:wrap;
 }
 
 /*ANIMATION, mostly taken from http://jsfiddle.net/r6dje/ */
