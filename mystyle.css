@@ -33,12 +33,12 @@ p, ul, li {
 
 /*refers mostly to icons, they need to shrink to be responsive*/
 .shrinkable {
-	max-width: 100%;
+  /* max-width: 100%; */
 }
 
 
 /*style for the tables that have icons and links, skills, etc*/
-td, #experience_media, #portfolio_media, #skills_table {
+td, #experience_media, #portfolio_media, #skills_table, #portfolio_media_mobile {
 	margin: auto;
 	font-family: 'Raleway';
 	font-size: 20px;
@@ -155,4 +155,39 @@ li { font-size: 24px;}
 .linker {
   color: #6E7B68;
   text-decoration: none;
+}
+
+
+/* change portfolio table for smaller screen size */
+@media only screen and (max-width: 600px) {
+  #portfolio_media {
+    display: none;
+  }
+  tr {
+    margin: auto;
+    font-family: 'Raleway';
+    font-size: 20px;
+    color: white;
+    border: 1px #6E7B68;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    max-width: 70%;
+    min-width: 50%;
+    padding: 10px;
+  }
+
+  td {
+    border-style: none;
+  }
+
+  p, ul, li {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #portfolio_media_mobile {
+    display: none;
+  }
 }
