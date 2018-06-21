@@ -12,6 +12,15 @@
 
 <!-- importing javascript functions-->
 <script src="functions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	window.onload = function() {
+	    var el = document.getElementById('experience_banner');
+	    el.scrollIntoView({behavior: "smooth"});
+	}
+});
+</script>
 
 <!-- Navigation diamond with hover capabilities -->
 	<div id="big">
@@ -53,7 +62,7 @@
 	</div>
 
 <!-- EXPERIENCE -->
-	<img src="banners/EXPERIENCE.png" class="banners"></img>
+	<img src="banners/EXPERIENCE.png" id= "experience_banner" class="banners"></img>
 
 	<a href="resume.pdf" target="_blank">
 		<img src="banners/Resume.png" id="resume">
