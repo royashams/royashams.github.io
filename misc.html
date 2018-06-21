@@ -11,6 +11,15 @@
 
 <!-- importing javascript functions-->
 <script src="functions.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	window.onload = function() {
+	    var el = document.getElementById('misc_banner');
+	    el.scrollIntoView({behavior: "smooth"});
+	}
+});
+</script>
 
 <!-- Navigation diamond with hover capabilities -->
 	<div id="big">
@@ -51,7 +60,7 @@
 		</table>
 	</div>
 
-<img src="banners/MISCELLANEOUS.png" class="banners"></img>
+<img src="banners/MISCELLANEOUS.png" id="misc_banner" class="banners"></img>
 
 <!-- GOALS -->
 <img src="banners/goals.png" class="banners"></img>
